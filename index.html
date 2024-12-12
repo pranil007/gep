@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>GEP Assignmnet</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Header section start -->
+      <header class="mainheader bg-dark">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-6 col-lg-3">
+                  <div class="logo">
+                     <a href="index.html"><img src="img/logo.png" alt="GEP Logo"></a>
+                  </div>
+               </div>
+               <div class="col-6 col-lg-9 d-flex justify-content-end align-items-center">
+                  <div class="desktop-menu d-none d-lg-flex align-items-center">
+                     <div class="topbutton">
+                        <a href="#" class="greenbtn">Request a Demo</a>
+                     </div>
+                  </div>
+                  <div class="mobile-menu d-lg-none">
+                     <div class="mobile-header">
+                        <button class="navbar-toggler" type="button" onclick="openNav()">
+                        <span class="custom-hamburger">
+                        <span class="lines"></span>
+                        <span class="lines"></span>
+                        <span class="lines"></span>
+                        </span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+            <ul class="navbar-navmobile">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            </ul>
+         </div>
+      </header>
+      <!-- Header section end -->
+      <div class="page">
+         <!-- Slider section start-->
+         <section class="main-slider-two clearfix">
+            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
+               "effect": "slide",
+               "pagination": {
+               "el": "#main-slider-pagination",
+               "type": "bullets",
+               "clickable": true
+               },
+               "navigation": {
+               "nextEl": "#main-slider__swiper-button-next",
+               "prevEl": "#main-slider__swiper-button-prev"
+               },
+               "autoplay": {
+               "delay": 3000,
+               "disableOnInteraction": true
+               }}'>
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="image-layer-two" style="background-image: url(assets/images/slider1.jpg);">
+                     </div>
+                     <div class="container">
+                        <div class="main-slider-two__inner">
+                           <div class="row">
+                              <div class="col-xl-12 col-lg-12">
+                                 <div class="main-slider-two__content text-center">
+                                    <span class="toptext">GEP SMART</span>
+                                    <h2 class="main-slider-two__title wow fadeInDown animated" data-wow-delay="100ms">
+                                       Source-to-Pay Supercharged by<br> AI and Analytics
+                                    </h2>
+                                    <p class="main-slider-two__text">
+                                       One software to drive efficiency in every stage of your procurement process
+                                    </p>
+                                    <div class="main-slider-two__btn-boxwow fadeInDown animated" data-wow-delay="100ms">
+                                       <a href="#" class="thm-btn main-slider-two__btn">REQUEST A DEMO </a>
+                                    </div>
+                                    <div class="slider-clients">
+                                       <img src="assets/images/slider-clients.png" alt="GEP Slider">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="image-layer-two" style="background-image: url(assets/images/slider2.jpg);">
+                     </div>
+                     <div class="container">
+                        <div class="main-slider-two__content text-center">
+                           <span class="toptext">GEP SMART</span>
+                           <h2 class="main-slider-two__title wow fadeInDown animated" data-wow-delay="100ms">
+                              Source-to-Pay Supercharged by<br> AI and Analytics
+                           </h2>
+                           <p class="main-slider-two__text">
+                              One software to drive efficiency in every stage of your procurement process
+                           </p>
+                           <div class="main-slider-two__btn-boxwow fadeInDown animated" data-wow-delay="100ms">
+                              <a href="#" class="thm-btn main-slider-two__btn">REQUEST A DEMO </a>
+                           </div>
+                           <div class="slider-clients">
+                              <img src="assets/images/slider-clients.png" alt="GEP Slider">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="main-slider__nav">
+                  <div class="swiper-button-prev" id="main-slider__swiper-button-next">
+                     <i class="icon-right-arrow"></i>
+                  </div>
+                  <div class="swiper-button-next" id="main-slider__swiper-button-prev">
+                     <i class="icon-right-arrow1"></i>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Slider section end-->
+         <!-- brand client section start-->
+         <section class="brand-one">
+            <div class="wow fadeInDown animated"  data-wow-duration="2500ms">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-12">
+                        <div class="brand-one__main-content">
+                           <div class="thm-swiper__slider swiper-container" data-swiper-options='{
+                              "spaceBetween": 100, 
+                              "slidesPerView": 6, 
+                              "autoplay": { 
+                              "delay": 1000, 
+                              "disableOnInteraction": false 
+                              }, 
+                              "breakpoints": {
+                              "0": {
+                              "spaceBetween": 30,
+                              "slidesPerView": 2
+                              },
+                              "375": {
+                              "spaceBetween": 30,
+                              "slidesPerView": 2
+                              },
+                              "575": {
+                              "spaceBetween": 30,
+                              "slidesPerView": 3
+                              },
+                              "767": {
+                              "spaceBetween": 50,
+                              "slidesPerView": 4
+                              },
+                              "991": {
+                              "spaceBetween": 50,
+                              "slidesPerView": 6
+                              },
+                              "1199": {
+                              "spaceBetween": 100,
+                              "slidesPerView": 6
+                              }
+                              }
+                              }'>
+                              <div class="swiper-wrapper">
+                                 <div class="swiper-slide">
+                                    <img src="assets/images/clients/1.png" alt="GEP clients">
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <img src="assets/images/clients/2.png" alt="GEP clients">
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <img src="assets/images/clients/3.png" alt="GEP Partners">
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <img src="assets/images/clients/4.png" alt="GEP Partners">
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <img src="assets/images/clients/5.png" alt="GEP clients">
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <img src="assets/images/clients/6.png" alt="GEP Clients">
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <img src="assets/images/clients/6.png" alt="GEP Clients">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- brand client section end-->
+         <!-- bscroll section start-->
+         <section class="scroll-section">
+            <div class="container">
+               <div class="text-center my-4">
+                  <h2 class="text-white subheading">GEP SMART is an end-to-end procurement software that<br> speeds up cycle times, increases compliance and delivers cost savings</h2>
+               </div>
+               <div class="row">
+                  <div class="cards-container">
+                     <!-- Card 1 -->
+                     <div class="card-wrapper d-flex flex-wrap wow fadeInDown animated" data-wow-duration="2500ms">
+                        <div class="col-lg-6 col-md-6">
+                           <img src="assets/images/service-2.jpg" alt="GEP Service">
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                           <div class="card-info ms-5">
+                              <h2 class="subheading">Get complete spend analysis</h2>
+                              <p>Gather spend data, classify expenses, analyze patterns, identify savings in procurement and supplier management.</p>
+                              <ul>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data </li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Card 2 -->
+                     <div class="card-wrapper d-flex flex-wrap wow fadeInTop animated" data-wow-duration="1500ms">
+                        <div class="col-lg-6 col-md-6">
+                           <div class="card-info me-5">
+                              <h2 class="subheading">Get complete spend analysis</h2>
+                              <p>Gather spend data, classify expenses, analyze patterns, identify savings in procurement and supplier management.</p>
+                              <ul>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data </li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                           <img src="assets/images/service-2.jpg" alt="GEP Service">
+                        </div>
+                     </div>
+                     <!-- Card 3 -->
+                     <div class="card-wrapper d-flex flex-wrap wow fadeInTop animated" data-wow-duration="1500ms">
+                        <div class="col-lg-6 col-md-6">
+                           <img src="assets/images/service-2.jpg" alt="GEP Service">
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                           <div class="card-info ms-5">
+                              <h2 class="subheading">Get complete spend analysis</h2>
+                              <p>Gather spend data, classify expenses, analyze patterns, identify savings in procurement and supplier management.</p>
+                              <ul>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data </li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Card 3 -->
+                     <div class="card-wrapper d-flex flex-wrap wow fadeInTop animated" data-wow-duration="1500ms">
+                        <div class="col-lg-6 col-md-6">
+                           <div class="card-info m2-3">
+                              <h2 class="subheading">Get complete spend analysis</h2>
+                              <p>Gather spend data, classify expenses, analyze patterns, identify savings in procurement and supplier management.</p>
+                              <ul>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data </li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                           <img src="assets/images/service-2.jpg" alt="GEP Service">
+                        </div>
+                     </div>
+                     <!-- Card 3 -->
+                     <div class="card-wrapper d-flex flex-wrap">
+                        <div class="col-lg-6 col-md-6">
+                           <img src="assets/images/service-2.jpg" alt="GEP Service">
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                           <div class="card-info ms-3">
+                              <h2 class="subheading">Get complete spend analysis</h2>
+                              <p>Gather spend data, classify expenses, analyze patterns, identify savings in procurement and supplier management.</p>
+                              <ul>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data </li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Card 3 -->
+                     <div class="card-wrapper d-flex flex-wrap wow fadeInDown animated" data-wow-duration="1500ms">
+                        <div class="col-lg-6 col-md-6">
+                           <div class="card-info me-3">
+                              <h2 class="subheading">Get complete spend analysis</h2>
+                              <p>Gather spend data, classify expenses, analyze patterns, identify savings in procurement and supplier management.</p>
+                              <ul>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data Cleansing</li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data </li>
+                                 <li><i class="bi bi-check green-icon"></i> Auto Data</li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                           <img src="assets/images/service-2.jpg" alt="GEP Service">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- bscroll section end-->
+         <!-- service card section start-->
+         <section class="whyus">
+            <div class="container">
+               <div class="row">
+                  <div class="text-left my-4">
+                     <h2 class="subheading">Why Procurement Leaders Love GEP SMART</h2>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="service-card mb-4 wow fadeInDown animated" data-wow-duration="1500ms">
+                        <div class="service-img">
+                           <img src="assets/images/bayer.png" alt="GEP Bayer">
+                        </div>
+                        <div class="service-content">
+                           <p class="servicetext">
+                              "The transformation of the global procurement organization, supported by GEP as a strong partner and measured with specific KPIs, sustainably increases the success of Bayer."
+                           </p>
+                           <p class="author">— Dr. Frank Kobor, <br>Head of PRO Rapid<br> Deployment, Bayer</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="service-card mb-4 wow fadeInDown animated" data-wow-duration="1500ms">
+                        <div class="service-img">
+                           <img src="assets/images/asahi.png" alt="GEP Asahi">
+                        </div>
+                        <div class="service-content">
+                           <p class="servicetext">
+                              "We selected GEP SMART because it is intuitive and easy to use. It provides us with quick insights into our spend and supports end to end process transparency and compliance."
+                           </p>
+                           <p class="author">—Tomas Veit, Head of<br> Procurement, Asahi <br>Breweries Europe Group</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="service-card mb-4 wow fadeInDown animated" data-wow-duration="1500ms">
+                        <div class="service-img">
+                           <img src="assets/images/bekaert.png" alt="GEP Bekaert">
+                        </div>
+                        <div class="service-content">
+                           <p class="servicetext">
+                              We selected GEP SOFTWARE as an integral part of our overarching digitalization program to optimize our sourcing and procurement processes across the company and deliver greater value."
+                           </p>
+                           <p class="author">— Luc Vankemmelbeke,<br> chief procurement officer,<br> Bekaert</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- service card section end-->
+      </div>
+      <!-- footer section start-->
+      <footer class="site-footer mt-3">
+         <div class="container">
+            <div class="footer-bottom">
+               <div class="row">
+                  <div class="col-xl-12 col-lg-12 col-md-12">
+                     <p class="footer-bottom-text">
+                        © Copyright GEP 2024. All rights reserved. Sitemap | Terms of Use | Privacy Statement | GEP Logo
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer section end-->
+      <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+      <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendors/swiper/swiper.min.js"></script>
+      <script src="assets/vendors/wow/wow.js"></script>
+      <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+      <script src="assets/vendors/timepicker/timePicker.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
